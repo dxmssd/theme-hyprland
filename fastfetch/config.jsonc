@@ -26,7 +26,7 @@
     {
       "type": "title",
       "key": "   User",
-      "KEYCOLOR": "magenta",
+      "keyColor": "light_magenta",
       "format": "{1}@{2}",
       "character": " "
     },
@@ -36,64 +36,64 @@
     }, 
     {
       "type": "custom",
-      "format": "\u001b[32m┌─────────────────────── Hardware ───────────────────────┐\u001b[0m"
+      "format": "\u001b[35m┌─────────────────────── Hardware ───────────────────────┐\u001b[0m"
     },
     {
       "type": "host",
       "key": "  󰌢 Host",
-      "keyColor": "green"
+      "keyColor": "light_magenta"
     },
     {
       "type": "cpu",
       "key": "  ├──  CPU",
-      "keyColor": "green"
+      "keyColor": "light_magenta"
     },
     {
       "type": "gpu",
       "key": "  ├── 󰢮 GPU",
-      "keyColor": "green"
+      "keyColor": "light_magenta"
     },
     {
       "type": "memory",
       "key": "  ├──  Mem",
-      "keyColor": "green"
+      "keyColor": "light_magenta"
     },
     {
       "type": "disk",
       "key": "  └── 󰋊 Disk",
-      "keyColor": "green"
+      "keyColor": "light_blue"
     },
     {
       "type": "custom",
-      "format": "\u001b[32m└────────────────────────────────────────────────────────┘\u001b[0m"
+      "format": "\u001b[34m└────────────────────────────────────────────────────────┘\u001b[0m"
     },
     {
       "type": "custom",
-      "format": "\u001b[36m┌─────────────────────── Software ───────────────────────┐\u001b[0m"
+      "format": "\u001b[34m┌─────────────────────── Software ───────────────────────┐\u001b[0m"
     },
     {
       "type": "os",
       "key": "  󰣇 OS",
-      "keyColor": "cyan"
+      "keyColor": "light_blue"
     },
     {
       "type": "kernel",
       "key": "  ├──  Ker",
-      "keyColor": "cyan"
+      "keyColor": "light_blue"
     },
     {
       "type": "shell",
       "key": "  ├──  Sh",
-      "keyColor": "cyan"
+      "keyColor": "light_blue"
     },
     {
       "type": "terminal",
       "key": "  └──  Term",
-      "keyColor": "cyan"
+      "keyColor": "light_blue"
     },
     {
       "type": "custom",
-      "format": "\u001b[36m└────────────────────────────────────────────────────────┘\u001b[0m"
+      "format": "\u001b[34m└────────────────────────────────────────────────────────┘\u001b[0m"
     },
     {
       "type": "custom",
@@ -102,19 +102,19 @@
     {
       "type": "uptime",
       "key": "  󱎫 Up",
-      "keyColor": "blue"
+      "keyColor": "light_blue"
     },
     {
       "type": "command",
       "key": "  ├── 󰚰 Last Upd",
-      "keyColor": "blue",
+      "keyColor": "light_blue",
       "shell": "fish",
       "text": "date -r /var/log/pacman.log '+%Y-%m-%d %H:%M:%S'"
     },
     {
       "type": "datetime",
       "key": "  └──  Date",
-      "keyColor": "blue",
+      "keyColor": "light_blue",
       "format": "{4} {5} "
     },
     {
