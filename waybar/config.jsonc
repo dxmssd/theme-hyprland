@@ -20,7 +20,6 @@
         "network",
         "power-profiles-daemon",
         "temperature",
-        "sway/language",
         "battery",
         "battery#bat2",
         "tray",  
@@ -73,13 +72,11 @@
     "hyprland/workspaces":{
 	    "disable-scroll":false,
 	    "on-scroll-up": "hyprctl dispatch workspace e+1",
-	    "on-scroll-up": "hyprtcl dispatch workspace e-1",
+	    "on-scroll-down": "hyprtcl dispatch workspace e-1",
 	    "on-click": "activate",
 	    "all-outputs": true,
 	    "format": "{name}"
     },
-
-
 //BATTERY
     "battery": {
         "states": {
@@ -113,11 +110,12 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "",
+        "format-wifi": "  {essid}",
         "format-ethernet": "",
-        "tooltip-format": "",
+        "tooltip-format": "{ifname} via {gwaddr}",
         "format-linked": "",
-        "format-disconnected": "⚠"
+        "format-disconnected": "⚠",
+	"on-click": "ghostty -e nmtui"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
@@ -138,18 +136,8 @@
         },
         "on-click": "pavucontrol"
     },
-    "custom/media": {
-        "format": "{icon} {text}",
-        "return-type": "json",
-        "max-length": 40,
-        "format-icons": {
-            "spotify": "",
-            "default": "🎜"
-        },
-        "escape": true,
-        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
-        // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
-    },
+
+//BUETOOTH
     "bluetooth": {
     "format": " {status}",
     "format-disabled": "󰂲",
@@ -161,8 +149,7 @@
 },
 
 
-    
-
+// BUTTON POWER
     
     "custom/power": {
         "format" : "⏻ ",
