@@ -59,6 +59,7 @@
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
     },
+//TEMPERATURE
     "temperature": {
         // "thermal-zone": 2,
         // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
@@ -84,15 +85,17 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{capacity}% {icon}",
-        "format-full": "{capacity}% {icon}",
+        "format": "{icon}% {capacity}",
+        "format-full": "{icon}% {capacity}",
         "format-charging": "{capacity}% ",
         "format-plugged": "{capacity}% ",
         "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": ["", "", "", "", ""],
+	"on-click": "ghostty -e battop"
     },
+//BATERRY
 
     "battery#bat2": {
         "bat": "BAT2"
@@ -108,6 +111,7 @@
         "power-saver": ""
       }
     },
+//NETWORK
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "  {essid}",
@@ -115,7 +119,7 @@
         "tooltip-format": "{ifname} via {gwaddr}",
         "format-linked": "",
         "format-disconnected": "⚠",
-	"on-click": "ghostty -e nmtui"
+	"on-click": "ghostty -e impala"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
