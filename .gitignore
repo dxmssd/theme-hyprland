@@ -1,5 +1,5 @@
 # Ignorar absolutamente todo por defecto
-*
+/*
 
 # Excepciones: Permitir únicamente las carpetas de tu Rice / Entorno
 !ghostty/
