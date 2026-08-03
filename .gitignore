@@ -1,0 +1,14 @@
+# Ignorar absolutamente todo por defecto
+*
+
+# Excepciones: Permitir únicamente las carpetas de tu Rice / Entorno
+!ghostty/
+!fastfetch/
+!fish/
+!hypr/
+!waybar/
+!btop/
+
+# Excepciones de archivos
+!.gitignore
+!README.md
